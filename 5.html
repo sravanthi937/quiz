@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result5()
+        {
+            var ele=document.getElementsByName('num');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="Dr.Rajendra prasad")
+                {
+            document.getElementById("result").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("result").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }                
+    </script>
+</head>
+<body>
+    <p>5.Who is the first president of india?</p>
+<input type="radio" name="num" value="Dr.Rajendra prasad">Dr.Rajendra prasad<br>
+<input type="radio" name="num" value="Dr.APJ Abdul kalam">Dr.APJ Abdul kalam<br>
+<input type="radio" name="num" value="Narendra modi">Narendra modi<br>
+<input type="radio" name="num" value="draupadi murmu">Draupadi murmu<br>
+<input type="button" value="submit" onclick="result5()">
+<div id="result"></div>
+
+</body>
+</html>

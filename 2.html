@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result2()
+        {
+            var ele=document.getElementsByName('vowel');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="21")
+                {
+            document.getElementById("re").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("re").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }             
+    </script>
+</head>
+<body>
+    <p>2.How many consonants are there?</p>
+<input type="radio" name="vowel" value="26">26<br>
+<input type="radio" name="vowel" value="5">5<br>
+<input type="radio" name="vowel" value="21">21<br>
+<input type="radio" name="vowel" value="20">20<br>
+<input type="button" value="submit" onclick="result2()">
+<div id="re"></div>
+</body>
+</html>

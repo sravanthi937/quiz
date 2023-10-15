@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result4()
+        {
+            var ele=document.getElementsByName('vow');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="goa")
+                {
+            document.getElementById("resul").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("resul").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }            
+    </script>
+</head>
+<body>
+    <p>4.What is the biggest state in India?</p>
+<input type="radio" name="vow" value="orissa">orissa<br>
+<input type="radio" name="vow" value="kerala">kerala<br>
+<input type="radio" name="vow" value="goa">goa<br>
+<input type="radio" name="vow" value="tamilnadu">tamilnadu<br>
+<input type="button" value="submit" onclick="result4()">
+<div id="resul"></div>
+</body>
+</html>

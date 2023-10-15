@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result3()
+        {
+            var ele=document.getElementsByName('planet');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="Rajasthan")
+                {
+            document.getElementById("resu").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("resu").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }       
+    </script>
+</head>
+<body>
+    <p>3.What is the biggest state in India?</p>
+<input type="radio" name="planet" value="Maharashtra">Maharashtra<br>
+<input type="radio" name="planet" value="Rajasthan">Rajasthan<br>
+<input type="radio" name="planet" value="Delhi">Delhi<br>
+<input type="radio" name="planet" value="Telangana">Telangana<br>
+<input type="button" value="submit" onclick="result3()">
+<div id="resu"></div>
+</body>
+</html>
